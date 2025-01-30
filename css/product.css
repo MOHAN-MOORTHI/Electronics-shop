@@ -1,0 +1,84 @@
+.productHome{
+    margin-top: 30px;
+    height: fit-content;
+    width: 100%;
+    padding: 250px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466),rgba(0, 0, 0, 0.5)),url("../assets/images/sw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-top: 1px solid black;
+}
+
+/* products */
+.owl-carousel{
+    padding: 0px 50px;
+}
+.owl-carousel .card{
+    width: fit-content !important;
+    padding: 5px 50px;
+}
+
+/* logo */
+.brand{
+    background-color: #333;
+    padding: 40px 50px 100px;
+    text-align: center;
+}
+.logo{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.logoimg{
+    width: 100px;
+    height: 50px;
+    margin-right: 70px;
+}
+
+.brand h1{
+    color: #d22e2e !important;
+    padding-bottom: 15px;
+    border-bottom:2px solid white !important;
+    margin-bottom: 40px;
+}
+
+/* productSlides */
+.productSlide{
+    padding: 30px 20px;
+}
+.pdt{
+    color: #333 !important;
+}
+.pdt:hover{
+    box-shadow: 10px 10px 10px #333;
+}
+.wpdt{
+    background-color: white !important;
+    color: #333 !important;
+}
+.wpdt .card-body{
+    border-top: 2px solid grey;
+}
+.wpdt:hover{
+    box-shadow: 5px 5px 5px grey;
+}
+
+@media only screen and (max-width: 600px){
+    .productHome{
+        padding: 200px 60px;
+    }
+    .productSlide{
+        padding: 20px 10px;
+    }
+    .brand{
+        padding: 50px 20px;
+    }
+}

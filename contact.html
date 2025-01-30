@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/icon/css/all.min.css">
+    <script src="./assets/jquerys/popper.min.js"></script>
+    <script src="./assets/jquerys/jquery.js"></script>
+    <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/icon/js/all.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #333; z-index: 999;">
+        <div class="container">
+            <a href="#" class="navbar-brand ps-4 pe-5">Logo</b></a>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end " style="background-color: #333;" id="navbarcollapse">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="" height="40px"> logo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav nav-pills ps-5 ms-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link" ><b>Home</b></a></li>
+                    <li class="nav-item"><a href="./Product.html" class="nav-link" ><b>Product</b></a></li>
+                    <li class="nav-item"><a href="./About.html" class="nav-link"><b>About Us</b></a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link active" style="color: white; background-color: #d22e2e; width: fit-content; padding: 10px 20px;"><b>contact</b></a></li>                    
+                </ul>
+                </div>  
+            </div>
+        </div>
+      </nav>
+
+      <!-- conatact -->
+      <section class="contact">
+        <div class="title">
+          <h1 class="name">Contact</h1>
+        </div>
+      </section>
+
+      <!-- address -->
+      <section class="address">
+        <div style="text-align: center;">
+          <h3 style="color: #d22e2e; border-bottom: 1px solid grey;" class="py-3 mb-4">REACH US..</h3>
+        </div>
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card h-100 add">
+                <div><i class="icon fa-solid fa-map-location-dot"></i></div>
+                <div class="heading"><h4><b>Location</b></h4></div>
+                <div class="detail"><p><b>239-B, Dr. Nanjappa Road, Coimbatore , TamilNadu ,India. <br>Pincode- 641 018</b></p></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 add op">
+                <div><i class="icon fa-solid fa-phone"></i></div>
+                <div class="heading"><h4><b>Phone</b></h4></div>
+                <div class="detail"><p><b>+91 81448 67899 <br>+91 87540 63080 </b></p></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 add op">
+                <div><i class="icon fa-solid fa-envelope-circle-check"></i></div>
+                <div class="heading"><h4><b>Mail</b></h4></div>
+                <div class="detail"><p><b>devarajcompany@gmail.com</b></p></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 add op">
+                <div><i class="icon fa-solid fa-clock-rotate-left"></i></div>
+                <div class="heading"><h4><b>Working</b></h4></div>
+                <div class="detail"><p><b>7 Days <br> 8.00 am - 8.00 pm</b></p></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- form -->
+      <section class="container-fluid text-center pt-5" style="height: fit-content !important;">
+        <div style="text-align: center;">
+          <h3 style="color: #d22e2e; border-bottom: 1px solid grey;" class="py-3 mb-4 op">QUERYS</h3>
+        </div>
+        <div class="container my-3 p-5">
+            <div class="row justify-content-center">
+                <form onsubmit="sendMail(); reset(); return false;" class="col-md-6 op">
+                    <div class="form-floating mb-3 text-secondary">
+                        <input type="text" class="form-control bg-light border border-secondary-subtle d-inline-flex focus-ring focus-ring-dark text-decoration-none border rounded-2" id="cName" placeholder="Name" required>
+                        <label for="cName"> Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3  text-secondary">
+                      <input type="email" id="email" class="form-control bg-light border border-secondary-subtle d-inline-flex focus-ring focus-ring-dark text-decoration-none border rounded-2" placeholder="name@example.com" required>
+                      <label for="email"> Your Mail Id</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3  text-secondary">
+                      <input type="text" class="form-control bg-light border border-secondary-subtle d-inline-flex focus-ring focus-ring-dark text-decoration-none border rounded-2" id="phone" placeholder="Phone no" required>
+                      <label for="phone"> Your Phone No</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3  text-secondary">
+                        <textarea class="form-control bg-light border border-secondary-subtle d-inline-flex focus-ring focus-ring-dark text-decoration-none border rounded-2" placeholder="Leave a comment here" id="comment" style="height: 100px" required></textarea>
+                        <label for="comment">Comments</label>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-dark" type="submit">Send</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-6 footcontact">
+                <h6 class="foot">Reach Us @</h6>
+                <p><small>WhatsApp us : +91 81448 67899</small></p>
+                <p><small>Call Us : 0422-2235 258</small></p>
+                <p><small>8:00 AM to 8:00 PM, 365 days</small></p>
+                <p><small>For Queries, please email us on devarajcompany@gmail.com</small></p>
+              </div>
+              <div class="col-6 ps-4 social">
+                <a href="#"><i class="fa-brands fa-facebook pe-2"></i>facebook</a><br>
+                <a href="#"><i class="fa-brands fa-whatsapp pe-2" ></i>WhatsApp</a><br>
+                <a href="#"><i class="fa-brands fa-instagram pe-2"></i>instagram</a><br>
+                <a href="#"><i class="fa-brands fa-square-x-twitter pe-2"></i>X-twitter</a>
+              </div>
+            </div>
+        </div>
+        <div class="pt-5">
+          <center><p class="foot"><small>@copyrights by Devaraj & co company</small></p></center>
+        </div>
+      </footer>
+
+      <script src=" https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendMail(){
+          Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "muthufear1@gmail.com",
+          Password : "7EA46FEC78B057557D2B8B60C348687C4804",
+          To : 'muthufear1@gmail.com',
+          From : 'muthufear1@gmail.com',
+          Subject : "Comment form Customer",
+          Body : "Name : "+document.getElementById("cName").value+"<br>phone no : "+document.getElementById("phone").value+"<br>mail : "+document.getElementById("email").value+"<br>comment : "+document.getElementById("comment").value
+        }).then(
+          message => alert(message)
+        );
+        }
+      </script>
+      <script src="./js/main.js"></script>
+
+</body>
+</html>      
